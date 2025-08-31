@@ -1,0 +1,4 @@
+<endpoints xmlns="https://jakarta.ee/xml/ns/jax-ws" version="4.0">
+  <endpoint implementation="com.globalbooks.catalog.CatalogServiceImpl"
+            url-pattern="/CatalogService"/>
+</endpoints>
