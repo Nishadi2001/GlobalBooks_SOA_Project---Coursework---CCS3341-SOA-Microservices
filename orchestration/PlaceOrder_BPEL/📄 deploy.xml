@@ -1,0 +1,11 @@
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03">
+  <process name="PlaceOrder">
+    <provide partnerLink="PlaceOrderPartner">
+      <service name="ns:PlaceOrderService" port="PlaceOrderPort"/>
+    </provide>
+    <invoke partnerLink="CatalogService"/>
+    <invoke partnerLink="OrdersService"/>
+    <invoke partnerLink="PaymentsService"/>
+    <invoke partnerLink="ShippingService"/>
+  </process>
+</deploy>
